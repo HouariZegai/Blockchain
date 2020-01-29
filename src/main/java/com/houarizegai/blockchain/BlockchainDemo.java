@@ -1,6 +1,6 @@
 package com.houarizegai.blockchain;
 
-public class Main {
+public class BlockchainDemo {
 
     public static void main(String[] args) {
         Blockchain blockchain = new Blockchain();
@@ -10,7 +10,7 @@ public class Main {
 
         System.out.println("Blocks hash:");
         for(Block block : blockchain.getBlocks()) {
-            System.out.println(block.getHash());
+            System.out.println("block #" + block.getIndex()  + ": " + block.getHash());
         }
     }
 }
